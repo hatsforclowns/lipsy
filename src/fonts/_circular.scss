@@ -1,0 +1,18 @@
+$font-name: 'Circular';
+$font-dir: './';
+$font-weights: (
+  'book': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': 900
+);
+
+@each $weight, $integer in $font-weights {
+  @font-face {
+    font-family: $font-name;
+    src: url(quote(unquote($font-dir)+to-lower-case($font-name)+#{'-'}+unquote($weight)+#{'.'}woff2)) format('woff2'),
+         url(quote(unquote($font-dir)+to-lower-case($font-name)+#{'-'}+unquote($weight)+#{'.'}woff)) format('woff');
+    font-weight: $integer;
+    font-style: normal;
+  }
+}

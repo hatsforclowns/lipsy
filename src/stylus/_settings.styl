@@ -1,0 +1,12 @@
+// Require custom variables
+@require './_variables'
+
+// Require Vuetify variables
+@require '~vuetify/src/stylus/settings/_variables.styl'
+
+// Set custom Vuetify vars
+$material-theme.background = $colours.primary
+$material-theme.app-bar = $shades.white
+
+// Import required Vuetify styles
+@require "~vuetify/src/stylus/main"

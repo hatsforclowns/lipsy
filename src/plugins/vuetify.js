@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
-import 'vuetify/src/stylus/app.styl'
+import Vue from "vue";
+import Vuetify from "vuetify/lib";
+import styl from "../stylus/_variables.styl";
 
 Vue.use(Vuetify, {
+  theme: {
+    primary: styl.colourPrimary,
+    secondary: styl.colourSecondary
+  },
   icons: {
     dropdown: {
       component: "iconChevronDown"
@@ -14,3 +18,4 @@ Vue.use(Vuetify, {
       component: "IconCheckSquare"
     }
   }
+});

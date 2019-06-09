@@ -1,5 +1,12 @@
 import Vue from "vue";
+
+// Vuetify
 import "./plugins/vuetify";
+import "./stylus/_settings.styl";
+
+// Circular font
+import "./fonts/_circular.scss";
+
 // Feather icons
 import {
   RefreshCcwIcon,
@@ -17,6 +24,9 @@ Vue.component("IconCheckSquare", CheckSquareIcon);
 // Clipboard integration lib
 import VueClipboard from "vue-clipboard2";
 Vue.use(VueClipboard);
+
+// App
+import App from "./App.vue";
 
 Vue.config.productionTip = false;
 

@@ -3,5 +3,14 @@ import Vuetify from 'vuetify/lib'
 import 'vuetify/src/stylus/app.styl'
 
 Vue.use(Vuetify, {
-  iconfont: 'md',
-})
+  icons: {
+    dropdown: {
+      component: "iconChevronDown"
+    },
+    checkboxOff: {
+      component: "IconSquare"
+    },
+    checkboxOn: {
+      component: "IconCheckSquare"
+    }
+  }
